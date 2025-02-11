@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1 {text-align: center;}
+    h2 {text-align: left; margin-left: 120px; margin-right: 120px;}
+    h3 {text-align: center;}
+    body {
+    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    select { font-size:20px;}
+    </style>
+    <meta charset="UTF-8">
+    <title>FirstStreet</title>
+</head>
+<body>
+    <h1>
+        FirstStreet - Climate Risk Assessment
+    </h1>
+    <h2>
+        The First Street Foundation is a non-profit organization dedicated to quantifying and communicating climate risks to help communities and individuals make informed decisions. The Foundation's risk models provide comprehensive datasets on hazards such as floods, wildfires, and heat waves across the United States.
+    </h2>
+    <h3>
+        Source : <a href="https://firststreet.org/methodology/">https://firststreet.org/methodology/</a>
+    </h3>
+    <a href="{{ url_for('index') }}">
+        <i class="fa fa-home" style="font-size: 50px; position: absolute; top: 0; margin-left: 10px;"></i>
+    </a>
+    <br>
+    <form action="/FirstStreet" method="POST">
+        <select name="disaster" style="margin-left: 120px;">
+            {% for disaster in disasters %}
+                <option value="{{disaster}}" >{{disaster}}</option>"
+            {% endfor %}
+        </select>
+        <select name="region">
+            {% for region in regions %}
+                <option value="{{region}}" >{{region}}</option>"
+            {% endfor %}
+        </select>
+        <input type="submit" value="Generate Plot" style="width: 150px; height: 25px; font-size: 20px;">
+    </form>
+    <br>
+    <img src= "{{ url_for('static', filename = file) }}" width = '45%' style="margin-left: 70px;" />
+    <img src= "{{ url_for('static', filename = map_file) }}" width = '45%' style="margin-left: 20px;" />
+</body>
+</html>

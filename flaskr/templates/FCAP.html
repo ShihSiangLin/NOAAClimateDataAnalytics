@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        h1 {text-align: center;}
+        body {
+            background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+    </style>
+
+</head>
+<body>
+    <h1>
+        First Energy Cloud Adoption Project (FCAP)
+    </h1>
+    <img src= "{{url_for('static', filename='speed_result.png')}}"/>
+    <img src= "{{url_for('static', filename='fcap_gui.png')}}"/>
+    <a href="{{ url_for('index') }}">
+        <i class="fa fa-home" style="font-size: 50px; position: absolute; top: 0; margin-left: 10px;"></i>
+    </a>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    h1{
+    text-align: center;
+    }
+    h2{
+    text-align: center;
+    }
+    body {
+    background-image: url('https://img.freepik.com/free-photo/white-cloud-blue-sky_74190-7709.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    img {
+    mix-blend-mode: multiply;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <title>USGS_Earthquake</title>
+</head>
+<body>
+    <h1>
+        United States Geological Survey (USGS) - Earthquakes Data
+    </h1>
+    <h2>
+        Source : <a href="https://www.usgs.gov/programs/earthquake-hazards/earthquakes">https://www.usgs.gov/programs/earthquake-hazards/earthquakes</a>
+    </h2>
+    <a href="{{ url_for('index') }}">
+        <i class="fa fa-home" style="font-size: 50px; position: absolute; top: 0; margin-left: 10px;"></i>
+    </a>
+    <br>
+    <img src= "{{url_for('static', filename='earthquake.png')}}" width="auto" style="margin-left: 150px; margin-right: 100px;">
+    <br>
+    <img src= "{{url_for('static', filename='Taiwan.png')}}" width="40%" style="margin-left: 150px; margin-top: 30px;">
+    <img src= "{{url_for('static', filename='Taiwan_2.png')}}" width="40%" style="margin-left: 50px; margin-top: 30px;">
+</body>
+</html>
