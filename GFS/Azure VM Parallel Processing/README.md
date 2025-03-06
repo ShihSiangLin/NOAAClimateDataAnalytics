@@ -63,3 +63,4 @@ Take Azure VM [D16ads_v5] for example, the total cost to process 24 `momentumxfe
 
 ### 4. Graphical User Interface:
 - ![GUI](./img/fcap_gui.png)
+- This GUI is designed to improve and simplify 24 hours GFS gust processing. By selecting a cycle, picking a date, and clicking the button "Generate Gust Window", the backend will process and generate both the gust instant and gust window grib files to the external Azure Storage Container. After the process is finished, both the Virtual Machine Scale Sets and the Virtual Machine "jumpbox" will automatically stop (deallocated) to save money. 
