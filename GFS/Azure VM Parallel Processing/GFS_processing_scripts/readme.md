@@ -1,0 +1,1 @@
+# This folder was intended to store the scripts used for processing GFS data, which was a proprietary asset of another team.

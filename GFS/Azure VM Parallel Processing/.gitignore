@@ -1,0 +1,8 @@
+*.log
+fewx-htf/fewxops/software/pycommon/__pycache__/pydx.cpython-312.pyc
+Terraform/.terraform/*
+Terraform/.terraform.lock.hcl
+Terraform/.terraform.tfstate.lock.info
+Terraform/main.tfplan
+Terraform/terraform.tfstate
+Terraform/vm_ip.txt
