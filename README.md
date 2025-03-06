@@ -2,7 +2,7 @@
 
 NOAA             |X|  Data Analytics
 :-------------------------:|:-------------------------:|:-------------------------:
-  <img src="https://cdn.oceanservice.noaa.gov/oceanserviceprod/facts/noaa-emblem-rgb-2022.png" width="1500" height="200" />  |  <img src="https://content.presentermedia.com/files/clipart/00033000/33230/handshake_800_wht.jpg" width="400" height="70" />  | <img src="https://cdn-icons-png.flaticon.com/512/6114/6114221.png" width="800" height="200" />
+  <img src="https://cdn.oceanservice.noaa.gov/oceanserviceprod/facts/noaa-emblem-rgb-2022.png" width="1200" height="200" />  |  <img src="https://content.presentermedia.com/files/clipart/00033000/33230/handshake_800_wht.jpg" width="400" height="70" />  | <img src="https://cdn-icons-png.flaticon.com/512/6114/6114221.png" width="1200" height="200" />
 
 This repository is for all work regarding the Use Cases and Data Analysis of National Oceanic and Atmospheric Administration (NOAA) climate weather data. 
 
