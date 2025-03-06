@@ -62,13 +62,4 @@ Take Azure VM [D16ads_v5] for example, the total cost to process 24 `momentumxfe
 
 
 ### 4. Graphical User Interface:
-![GUI](./img/fcap_gui.png)
-
-
-
-
-
-
-
-
-
+- ![GUI](./img/fcap_gui.png)
